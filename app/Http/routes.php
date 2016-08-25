@@ -11,4 +11,13 @@
 |
 */
 
-Route::get('/', 'RentController@index');
+//STORE
+Route::get('/rent', 	['uses' => 'RentController@index',	'as' => 'rent.toys']);
+
+Route::post('/rent', 	['uses' => 'RentController@post',	'as' => 'renting.toys']);
+
+
+//BACKOFFICE
+Route::get('/pay', 		['uses' => 'PayController@index',	'as' => 'pay.toys']);
+
+Route::post('/pay', 	['uses' => 'PayController@post',	'as' => 'paying.toys']);

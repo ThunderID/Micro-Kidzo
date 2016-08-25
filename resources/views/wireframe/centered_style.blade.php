@@ -21,16 +21,8 @@
 		<div class="clearfix">&nbsp;</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
-					@yield('full')
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					@yield('left')
-				</div>
-				<div class="col-sm-6">
-					@yield('right')
+				<div class="col-sm-6 col-sm-offset-3">
+					@yield('middle')
 				</div>
 			</div>
 		</div>

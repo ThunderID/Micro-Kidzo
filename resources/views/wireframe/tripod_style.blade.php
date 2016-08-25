@@ -26,10 +26,13 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-4">
 					@yield('left')
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-4">
+					@yield('middle')
+				</div>
+				<div class="col-sm-4">
 					@yield('right')
 				</div>
 			</div>
