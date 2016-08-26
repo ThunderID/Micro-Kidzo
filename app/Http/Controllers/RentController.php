@@ -48,8 +48,8 @@ class RentController extends Controller
 
 		$http 			= new Client;
 
-		$response 		= $http->post('http://localhost/micro-billing/public/billing', ['form_params' => $array_of_rent]);
-
+		$response 		= $http->post('http://localhost/micro-billing/public/billings', ['form_params' => $array_of_rent]);
+dd(json_decode($response->getBody(), true));
 		return Redirect::route('rent.toys');
 	}
 }

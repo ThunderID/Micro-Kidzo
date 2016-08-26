@@ -27,11 +27,11 @@ class PayController extends Controller
 	 */
 	public function post()
 	{
-		$array_of_pay		= Input::only('refnumber', 'amount', 'method', 'date');
+		$array_of_pay	= Input::only('refnumber', 'amount', 'method', 'date');
 
 		$http 			= new Client;
 
-		$response 		= $http->post('http://localhost:2220', ['form_params' => $array_of_pay]);
+		$response 		= $http->post('http://localhost:2221/payments', ['form_params' => $array_of_pay]);
 
 		return Redirect::route('paying.toys');
 	}

@@ -7,6 +7,8 @@
 	<h2>Payment Information</h2>
 	<hr/>
 	<div class="clearfix">&nbsp;</div>
-	@include('payment.form')
+	{!! Form::open(['url' => route('paying.toys'), 'class' => 'hollow-login', 'method' => 'POST']) !!}
+		@include('payment.form')
+	{!!Form::close()!!}
 
 @stop
